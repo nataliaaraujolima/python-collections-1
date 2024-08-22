@@ -17,7 +17,7 @@ animes = [
 # Objetivo: Criar uma nova lista com os nomes dos animes que têm uma classificação maior que 9.0.
 
 
-def tem_alta_classificação(anime):
+def filtra_alta_classificação(anime):
     """
     Determines if an anime has a rating higher than 8.9.
 
@@ -33,5 +33,5 @@ def tem_alta_classificação(anime):
 resultado_classificacao = [
     anime["nome"]
     for anime in animes
-    if tem_alta_classificação(anime)]
+    if filtra_alta_classificação(anime)]
 print(resultado_classificacao)
