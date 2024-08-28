@@ -1,7 +1,13 @@
-'''permite que você construa uma nova lista aplicando uma expressão a cada item
-de uma sequência ou coleção existente,
-opcionalmente filtrando elementos com base em uma condição.
-sintaxe -> [nova_expressao for item in coleção if condição]
+'''
+List comprehension é uma forma concisa e eficiente de criar listas em Python.
+Em vez de usar um loop tradicional para construir uma lista, 
+você pode usar a sintaxe de list comprehension para fazer isso em uma única linha.
+sintaxe -> [expressão for item in animes]
+com condicoinal -> [expressão for item in animes if condição]
+
+notas = [6, 8, 9, 5, 7]
+notas_altas = [nota for nota in notas if nota > 7]
+print(notas_altas)
 '''
 
 animes = [
